@@ -58,3 +58,9 @@
   /* z-index: 2; */
   cursor: pointer;
 }
+@media screen and (max-width: 1000px) {
+  .header__links,
+  .header__right {
+    display: none;
+  }
+}

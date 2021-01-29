@@ -21,16 +21,9 @@ function Header({ isMenuOpen, setIsMenuOpen }) {
                 <LinkS to="powerwall" smooth={true} spy={true} duration={500} activeClass="active">POWERWALL</LinkS>
             </div>
             <div className='header__right'>
-                <LinkR to='/' className={isMenuOpen && 'header__link--hidden'}>
-                    Shop
-        </LinkR>
-                <LinkR to='/login' className={isMenuOpen && 'header__link--hidden'}>
-                    Tesla Account
-        </LinkR>
-                <div
-                    className='header__menu'
-                    onClick={() => setIsMenuOpen(!isMenuOpen)}
-                >
+                <LinkR to='/' className={isMenuOpen && 'header__link--hidden'}>Shop</LinkR>
+                <LinkR to='/login' className={isMenuOpen && 'header__link--hidden'}>Tesla Account</LinkR>
+                <div className='header__menu' onClick={() => setIsMenuOpen(!isMenuOpen)}>
                     {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
                 </div>
             </div>

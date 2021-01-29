@@ -13,6 +13,7 @@ import { auth } from './firebase';
 import TeslaAccount from './TeslaAccount';
 import block_data from './data';
 function App() {
+
   const user = useSelector(selectUser)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const dispatch = useDispatch()
@@ -46,6 +47,7 @@ function App() {
                 block_data.map((block) => (
                   <HeaderBlock
                     img={block.img}
+                    imgPhone={block.imgPhone}
                     model={block.model}
                     name={block.name}
                     btn1={block.btn1}
